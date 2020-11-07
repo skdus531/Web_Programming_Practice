@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Problem 3</title>
+</head>
+<header>
+    <h2>Immediate Transfer/Scheduled Transfer</h2>
+</header>
+<body>
+    <h3 style="color:blue">Withdrawal account information</h3>
+    <table> 
+        <!-- table style   -->
+        <style>
+            table {
+              width: 100%;
+              border: 1px solid #444444;
+            }
+            th, td {
+              border: 1px solid #444444;
+            }
+        </style>
+        
+        
+        <!-- row 1 -->
+        <tr>
+            <td>Withdrawal account no.</td>
+            <td>
+                <select name="savings">  
+                    <option value="wife" selected>My wife's savings</option>
+                    <option value="friends">My friend's savings</option>
+                    <option value="own">My own savings</option>
+                </select>
+                <br>
+                <input type="submit" value="submit">
+            </td>
+        </tr>  
+        
+        <!-- row 2 -->
+        <tr>
+            <td>Account password</td>
+            <td>
+                <input type="password" name="pw" size="10" maxlength="10"> Enter with mouse
+                <button>Inquire password error count</button>
+                <button>Withdrawal account management</button>
+            </td>
+        </tr>
+        <!-- row 3 -->
+        <tr>
+           <td>Transfer amount</td> 
+           <td><input type="text">KRW
+                <button>Transfer limit inquiry</button> <br>
+                <button>KRW 1,000,000</button>
+                <button>KRW 500,000</button>
+                <button>KRW 100,000</button>
+                <button>KRW 50,000</button>
+                <button>KRW 30,000</button>
+                <button>KRW 10,000</button>
+                <button>Total amount</button>
+                <button>Correct</button>
+            </td>
+        </tr>
+
+        <!-- row 4 -->
+        <tr>
+            <td>My passbook indication details</td>
+            <td>
+                <input type="text" maxlength="8">
+                Up to 8 digits(If omitted, the account holder name of the deposit passbook will be displayed)
+            </td>
+        </tr>
+    </table>
+    <h3 style="color:blue">Deposit account information</h3>
+    <table>
+        <!-- table style -->
+        <style>
+            table {
+              width: 100%;
+              border: 1px solid #444444;
+            }
+            th, td {
+              border: 1px solid #444444;
+            }
+        </style>
+        <!-- row 1 -->
+        <tr>
+            <td>
+                Deposit bank <br>
+                Deposit account no.
+            </td>
+            <td>
+                <button>Frequently used deposit account</button>
+                <button>Last deposit account</button>
+                <button>My account</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;<button>Inquire troubled bank</button>
+                <br>
+                <select name="bank" >
+                    <option value="Woori" selected>Woori</option>
+                    <option value="Seoul">Seoul</option>
+                    <option value="Shinhan">Shinhan</option>
+                    <option value="Nonghyup">Nonghyup</option>
+                </select>
+                <br>
+                <input type="text">
+            </td>
+        </tr>
+        <!-- row 2 -->
+        <tr>
+            <td>Recipient's passbook indication details</td> 
+            <td>
+                <input type="text" size="13" value="NaYeon" maxlength="8" >
+                Up to 8 digits(If omitted, the account holder name of the deposit passbook will be displayed.)
+            </td>
+        </tr>
+
+        <!-- row 3 -->
+        <tr>
+            <td>Transfer action date</td>              
+            <td>
+                <input type="date"> <button>Designate transfer date</button>
+            </td>
+        </tr>
+    </table>
+
+    <h3 style="color:blue;">Optional input information <button>Open CMS number, etc.</button></h3> 
+    <hr style="border:solid 1px black">
+    <p style="color: orange;">
+    person impersonating for an employee of the public agency such as the National Tax service
+    and public prosecutors office, be sure to confirm the fact to make a loss.</p>
+    
+    <!-- button center align -->
+    <div style="text-align: center;"><input type="submit" value="confirm" style="text-align: center;"></div>
+    
+</body>
+</html>
