@@ -1,0 +1,92 @@
+#wrap {
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid #cccccc;
+}
+
+/*beginning of CSS code for Header text Networking Lab*/
+#header {
+    display: flex;
+    border: 1px solid #cccccc;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*End of Code for header text*/
+
+/*Beginning of CSS code for navigation menu section*/
+
+#nav table{
+    width: 100%;
+    height: 50px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-bottom: 1px solid #cccccc;
+}
+
+#nav table td{
+    border-collapse: collapse;
+    border-left: 1px solid #cccccc;
+    text-align: center;
+    
+}
+
+/*End of CSS code for navigation menu section*/
+
+/*Beginning of CSS code for main content section*/
+
+#content_header{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#content_header hr{
+    width: 98%;
+    margin: auto;
+    border: 1px solid #cccccc;
+}
+
+
+#content_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#content_image{
+    width: 350px;
+    flex: 1;
+    margin: 10px;
+}
+
+#content_image img{
+    width : 100%;
+    object-fit: contain;
+}
+
+#content_text{
+    flex: 1;
+    padding: 0 15px 0 5px;
+}
+
+#content_text p{
+    font-size: larger;
+}
+/*End of CSS code for main content section*/
+
+/*Beginning of code for page footer section*/
+#footer {
+    height: 100px;
+    line-height: 100px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #cccccc;
+    font-style: italic;
+}
+/*End of CSS code for page footer section*/
