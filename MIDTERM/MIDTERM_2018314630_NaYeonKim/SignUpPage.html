@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUpPage</title>
+    <link rel="stylesheet" href="./SignUpPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="./images/Logo.png" alt="Logo">
+            &nbsp;  Explorer Games
+        </div>
+        <div class="forms">
+            <div class="form_title">
+                <br> Creating New Account <br> <br>
+            </div> 
+            <div class="form_content">
+                <form action="./MainPage.html">
+                    Email : <input type="text" placeholder="Email"> <br><br>
+                    Password : <input type="password" placeholder="Password"> <br><br>
+                    Nickname : <input type="text" placeholder="Nickname"> <br><br>
+                    <strong>Date of Birth</strong>  <br>
+                    Month : <select name="month">
+                        <option value="January">January</option>
+                        <option value="Febuary">Febuary</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>  &nbsp; &nbsp; 
+                    
+                    Day : <input type="number" min="1" max="31" value="1">   &nbsp; &nbsp; 
+                    Year : <input type="number" min="1900" max="2020" value="2020"> <br><br>
+                    <input type="radio" name="region" value="local" checked> Local &nbsp; &nbsp;  
+                    <input type="radio" name="region" value="foreigner"> Foreigner <br><br>
+                    <input type="checkbox"> I agree with the Privacy Policy of the Explorer Games. <br>
+                    <input type="checkbox"> I agree with the Personal Credit Information Usage Agreement. <br><br>
+                    <button value="Sign Up" onclick="MainPage.html" title="Sign Up">Sign Up</button>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Already a Member? &nbsp; <a href="./MainPage.html">Sign in</a></p>
+        </div> 
+    </div>
+</body>
+</html>
